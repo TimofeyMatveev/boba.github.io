@@ -1,0 +1,84 @@
+.menu {
+    background-color: aqua;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+body {
+    background-color: burlywood;
+}
+.blocke {
+    background-color: rgb(217, 231, 17);
+    width: 800px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.blocki {
+    background-color: rgb(223, 201, 11);
+    display: flex;
+    width: 250px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.grupp {
+    display: flex;
+    gap: 20px
+}
+.left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.recept {
+    display: flex;
+    border-radius: 10px;
+    background-color: #CE8705;
+    width: 250px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 25px;
+}
+.ingrid {
+    display: flex;
+    border-radius: 10px;
+    background-color: #CE8705;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+    padding: 0 10px;
+    width: 1000px;
+    font-size: 20px;
+}
+.img_mobile {
+    display: none;
+    width: 300px;
+}
+@media (orientation: portrait) and (max-width: 450px) {
+    .blocke {
+            width: 600px;
+            height: 540px;
+}
+.img_mobile {
+    display: block;
+}
+.img_desktop {
+    display: none;
+}
+.left_side {
+    gap:10px;
+}
+}
